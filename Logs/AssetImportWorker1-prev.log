@@ -15,7 +15,7 @@ C:/Users/gbara/repos/Shmestiny
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-53880
+55766
 Successfully changed project path to: C:/Users/gbara/repos/Shmestiny
 C:/Users/gbara/repos/Shmestiny
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/Users/gbara/repos/Shmestiny
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [35520] Host "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 2046895342 [EditorId] 2046895342 [Version] 1048832 [Id] WindowsEditor(7,g-frame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [37768] Host "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 4093084990 [EditorId] 4093084990 [Version] 1048832 [Id] WindowsEditor(7,g-frame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [35520] Host "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 2046895342 [EditorId] 2046895342 [Version] 1048832 [Id] WindowsEditor(7,g-frame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [37768] Host "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 4093084990 [EditorId] 4093084990 [Version] 1048832 [Id] WindowsEditor(7,g-frame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 78.93 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 82.38 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
 [Subsystems] Discovering subsystems at path D:/Unity/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -68,37 +68,37 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2021.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001263 seconds.
+Registered in 0.001317 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 73.50 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 78.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.390 seconds
+- Completed reload, in  0.409 seconds
 Domain Reload Profiling:
-	ReloadAssembly (391ms)
-		BeginReloadAssembly (66ms)
+	ReloadAssembly (409ms)
+		BeginReloadAssembly (60ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (277ms)
-			LoadAssemblies (65ms)
+		EndReloadAssembly (301ms)
+			LoadAssemblies (59ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (56ms)
+			SetupTypeCache (69ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (14ms)
-			SetupLoadedEditorAssemblies (185ms)
+			RebuildScriptCaches (16ms)
+			SetupLoadedEditorAssemblies (194ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (74ms)
+				RefreshPlugins (79ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (81ms)
+				ProcessInitializeOnLoadAttributes (85ms)
 				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -106,53 +106,53 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007414 seconds.
+Registered in 0.006854 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 74.81 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 75.24 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.125 seconds
+- Completed reload, in  1.126 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1126ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (1127ms)
+		BeginReloadAssembly (80ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (980ms)
-			LoadAssemblies (83ms)
+		EndReloadAssembly (987ms)
+			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (160ms)
+			SetupTypeCache (154ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (702ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (709ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (75ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (509ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (510ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5557 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 47 unused Assets / (46.4 KB). Loaded Objects now: 6011.
+Unloading 47 unused Assets / (46.5 KB). Loaded Objects now: 6011.
 Memory consumption went from 200.3 MB to 200.2 MB.
-Total: 2.763600 ms (FindLiveObjects: 0.335500 ms CreateObjectMapping: 0.216100 ms MarkObjects: 2.160300 ms  DeleteObjects: 0.051100 ms)
+Total: 2.642700 ms (FindLiveObjects: 0.298800 ms CreateObjectMapping: 0.079600 ms MarkObjects: 2.212700 ms  DeleteObjects: 0.051000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -169,149 +169,85 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 990796.612072 seconds.
-  path: Assets/Tiny Swords
-  artifactKey: Guid(3d3b4ddc47db8f74bb49667d1bd76539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 993245.949204 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(eb14ca2e08a1f5842af005a2a02a1d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords using Guid(3d3b4ddc47db8f74bb49667d1bd76539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5671f24863a937c40d5f04c75b1ede6b') in 0.012453 seconds 
+Start importing Assets/Scripts using Guid(eb14ca2e08a1f5842af005a2a02a1d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7692ad091a9b5969b530433b7f8e086a') in 0.012672 seconds 
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 9.827851 seconds.
-  path: Assets/Tiny Swords/Terrain/Ground/Tilemap_Elevation.png
-  artifactKey: Guid(ca94ab963e465a34293f077e6fa0513a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Terrain/Ground/Tilemap_Elevation.png using Guid(ca94ab963e465a34293f077e6fa0513a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7adebf9c1aefee07916a813d089d650f') in 0.263539 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 31.230039 seconds.
-  path: Assets/Tiny Swords/Deco/02.png
-  artifactKey: Guid(8c66e4e3fcc456f42be358ab47f64c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Deco/02.png using Guid(8c66e4e3fcc456f42be358ab47f64c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8831086467c090c0a5eb48bd527c2040') in 0.014565 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Swords/Deco/13.png
-  artifactKey: Guid(1687a6d8275860749b27aa7b0482be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Deco/13.png using Guid(1687a6d8275860749b27aa7b0482be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e5410bf400fb14aaf1b9b5bc927154') in 0.020785 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Swords/Deco/11.png
-  artifactKey: Guid(872236ade367d88448eb97edd956037b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Deco/11.png using Guid(872236ade367d88448eb97edd956037b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e01646c43568c94a9b97b3db1f6c1f7') in 0.020827 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
   Time since last request: 0.000015 seconds.
-  path: Assets/Tiny Swords/Deco/08.png
-  artifactKey: Guid(1882997ff60357745966d3fcad170131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  path: Assets/TestRelay.cs
+  artifactKey: Guid(4182d6cf52e29b8489ebff4b8fc60012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Deco/08.png using Guid(1882997ff60357745966d3fcad170131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5146bd05369327c1a5e0076c7b0e0a5') in 0.026225 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/TestRelay.cs using Guid(4182d6cf52e29b8489ebff4b8fc60012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391d234603850b1ff721e0a7edf385fc') in 0.028402 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007066 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.019 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1020ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (844ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (151ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (572ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (477ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5533 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (21.9 KB). Loaded Objects now: 6016.
+Memory consumption went from 198.8 MB to 198.7 MB.
+Total: 2.507800 ms (FindLiveObjects: 0.300200 ms CreateObjectMapping: 0.164500 ms MarkObjects: 2.023900 ms  DeleteObjects: 0.018600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tiny Swords/Deco/05.png
-  artifactKey: Guid(16cab9192f981e744b5d77116f17d3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 10.542990 seconds.
+  path: Assets/DefaultNetworkPrefabs.asset
+  artifactKey: Guid(83f630616e72ba94b969359859bef105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Deco/05.png using Guid(16cab9192f981e744b5d77116f17d3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80227f21c1a714ee4e8e745c93aa56a0') in 0.018751 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Swords/Deco/03.png
-  artifactKey: Guid(9aa4943d9ddbee44ba93b804651a1834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Deco/03.png using Guid(9aa4943d9ddbee44ba93b804651a1834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277f7e7e457b8ef11cda9c54be928e4a') in 0.010939 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Tiny Swords/Deco/04.png
-  artifactKey: Guid(b35747cc6c65c2e4b8df1f15a7d7660a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Deco/04.png using Guid(b35747cc6c65c2e4b8df1f15a7d7660a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '539d92a9982071af7756a37d42e499eb') in 0.016599 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Swords/Deco/10.png
-  artifactKey: Guid(91d6e39bbe258154e84dab714ac2c873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Deco/10.png using Guid(91d6e39bbe258154e84dab714ac2c873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2883039c3220b87fd3c9a06b445f9f2') in 0.015617 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tiny Swords/Deco/18.png
-  artifactKey: Guid(439fd79d3e18f7d4da753b16090588a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Deco/18.png using Guid(439fd79d3e18f7d4da753b16090588a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789d72d9f3b1fc64e5febccc38bee71f') in 0.018918 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 44.148161 seconds.
-  path: Assets/Tiny Swords/Resources/Resources/G_Spawn.png
-  artifactKey: Guid(6e71cd4c4d0e46b49af89e7f25e243cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Resources/Resources/G_Spawn.png using Guid(6e71cd4c4d0e46b49af89e7f25e243cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85b3fb28a4b8f362ad2af4f1b4416939') in 0.019174 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Tiny Swords/Resources/Resources/M_Spawn.png
-  artifactKey: Guid(634abe73c5b6666468d6c4e4a7b0dceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Resources/Resources/M_Spawn.png using Guid(634abe73c5b6666468d6c4e4a7b0dceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8e554ff74e9e3402aad9d147da91f1') in 0.027740 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tiny Swords/Resources/Resources/W_Idle_(NoShadow).png
-  artifactKey: Guid(1c4e5f2b19ba08d409247078ba498aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Resources/Resources/W_Idle_(NoShadow).png using Guid(1c4e5f2b19ba08d409247078ba498aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7311bf70fdf36ddff5119ff27b3893eb') in 0.027003 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tiny Swords/Resources/Resources/W_Idle.png
-  artifactKey: Guid(83239dc76a1c5d44687e7382769e5f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Resources/Resources/W_Idle.png using Guid(83239dc76a1c5d44687e7382769e5f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1714ebc9d95a0d82499add7f150655a') in 0.021820 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.921346 seconds.
-  path: Assets/Tiny Swords/Resources/Gold Mine/GoldMine_Inactive.png
-  artifactKey: Guid(a4eb96d4437da374088289b938de140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Resources/Gold Mine/GoldMine_Inactive.png using Guid(a4eb96d4437da374088289b938de140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0856e9ec70b50b8069916a90158f5b') in 0.015183 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.182107 seconds.
-  path: Assets/Tiny Swords/Resources/Sheep/HappySheep_Bouncing.png
-  artifactKey: Guid(1f5537559e95709419f06fe5c0bec32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Resources/Sheep/HappySheep_Bouncing.png using Guid(1f5537559e95709419f06fe5c0bec32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd090adc82f52904f9fa1cb4cdd89b0d8') in 0.015106 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Swords/Resources/Sheep/HappySheep_Idle.png
-  artifactKey: Guid(d78c2d4358100a54197646fe32e80aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Resources/Sheep/HappySheep_Idle.png using Guid(d78c2d4358100a54197646fe32e80aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5428d8069fcfa10e80b4a2e78591e338') in 0.013192 seconds 
-Number of asset objects unloaded after import = 3
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Start importing Assets/DefaultNetworkPrefabs.asset using Guid(83f630616e72ba94b969359859bef105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db2325396cfaebd50e1ec91d1768bbd') in 0.025620 seconds 
+Number of asset objects unloaded after import = 11
