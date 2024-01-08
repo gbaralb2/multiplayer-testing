@@ -1,0 +1,517 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.33f1 (ee5a2aa03ab2) revision 15620650'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 31904 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2021.3.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/gbara/repos/Shmestiny
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53880
+Successfully changed project path to: C:/Users/gbara/repos/Shmestiny
+C:/Users/gbara/repos/Shmestiny
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23276] Host "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 1855168236 [EditorId] 1855168236 [Version] 1048832 [Id] WindowsEditor(7,g-frame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [23276] Host "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 1855168236 [EditorId] 1855168236 [Version] 1048832 [Id] WindowsEditor(7,g-frame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 81.03 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gbara/repos/Shmestiny/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 (ID=0x2786)
+    Vendor:   NVIDIA
+    VRAM:     12026 MB
+    Driver:   31.0.15.4617
+Initialize mono
+Mono path[0] = 'D:/Unity/2021.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001389 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 73.57 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.391 seconds
+Domain Reload Profiling:
+	ReloadAssembly (392ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (278ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (56ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (14ms)
+			SetupLoadedEditorAssemblies (186ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (74ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (81ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008004 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 74.13 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.127 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1128ms)
+		BeginReloadAssembly (83ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (984ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (160ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (701ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (74ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (509ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5557 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (46.4 KB). Loaded Objects now: 6011.
+Memory consumption went from 200.3 MB to 200.2 MB.
+Total: 2.789100 ms (FindLiveObjects: 0.321800 ms CreateObjectMapping: 0.097800 ms MarkObjects: 2.310800 ms  DeleteObjects: 0.057900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 990796.611853 seconds.
+  path: Assets/Tiny Swords/Terrain
+  artifactKey: Guid(3642e9c6b3974b24a8d3cd8813cf7318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Terrain using Guid(3642e9c6b3974b24a8d3cd8813cf7318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b62216c2184d78f473486089cc17725') in 0.013251 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.454188 seconds.
+  path: Assets/Tiny Swords/Terrain/Ground
+  artifactKey: Guid(884458d49e7e19d4a8a49fdcb79dce7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Terrain/Ground using Guid(884458d49e7e19d4a8a49fdcb79dce7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faae8f8badc54b008bd7af12410636c8') in 0.005281 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.365563 seconds.
+  path: Assets/Tiny Swords/Terrain/Ground/Shadows.png
+  artifactKey: Guid(6b77835bf0909774e9cb36584e4e5d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Terrain/Ground/Shadows.png using Guid(6b77835bf0909774e9cb36584e4e5d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a7fea83748fd0eebc3d7c43e2905b2') in 0.260204 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Tiny Swords/Terrain/Ground/Tilemap_Flat.png
+  artifactKey: Guid(1f602f233f8605c4099731c6c1dfd414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Terrain/Ground/Tilemap_Flat.png using Guid(1f602f233f8605c4099731c6c1dfd414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c9153608bab4e77ea768b49c01dab3c') in 0.026978 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 18.723847 seconds.
+  path: Assets/Tiny Swords/Terrain/Bridge
+  artifactKey: Guid(f152f02716d3b144ca34bcf5efa09ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Terrain/Bridge using Guid(f152f02716d3b144ca34bcf5efa09ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8905599608fdce68b7948ed3cb50e278') in 0.005527 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.084324 seconds.
+  path: Assets/Tiny Swords/Terrain/Bridge/Bridge_All.png
+  artifactKey: Guid(676ed0c7aae6cee419a6e0af9b978d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Terrain/Bridge/Bridge_All.png using Guid(676ed0c7aae6cee419a6e0af9b978d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d843fb5d75875809baca974ae3f38a') in 0.015206 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.218976 seconds.
+  path: Assets/Tiny Swords/Terrain/Water
+  artifactKey: Guid(2004a9f15e62ead45a95685dbd3c08b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Terrain/Water using Guid(2004a9f15e62ead45a95685dbd3c08b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b840dc219e1e1b46e1f111497900ca46') in 0.005536 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.067175 seconds.
+  path: Assets/Tiny Swords/Terrain/Water/Water.png
+  artifactKey: Guid(bec6126706936f74d9badb231d95de66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Terrain/Water/Water.png using Guid(bec6126706936f74d9badb231d95de66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b621c9611c9f625147fff1117be9ce85') in 0.011250 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.985486 seconds.
+  path: Assets/Tiny Swords/Deco
+  artifactKey: Guid(4886585427ef9ce43b5707b57fcfd4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Deco using Guid(4886585427ef9ce43b5707b57fcfd4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559e6170b309194a7e5c357f7e333ce0') in 0.005404 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.075983 seconds.
+  path: Assets/Tiny Swords/Deco/01.png
+  artifactKey: Guid(345be4fc1cc2ca24ea0cd705e875de57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Deco/01.png using Guid(345be4fc1cc2ca24ea0cd705e875de57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c68d9e57404b5f84a0f7ed8c603c602c') in 0.014669 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tiny Swords/Deco/15.png
+  artifactKey: Guid(f2006e5d6d89834498a90e10800f9ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Deco/15.png using Guid(f2006e5d6d89834498a90e10800f9ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046180b061dd70f87193e3eaf821181e') in 0.020110 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tiny Swords/Deco/16.png
+  artifactKey: Guid(a22dcdcd218a30248bf6070fbe50cd68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Deco/16.png using Guid(a22dcdcd218a30248bf6070fbe50cd68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87a73fa52ec132f87a68cb98d89131a') in 0.022097 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Tiny Swords/Deco/09.png
+  artifactKey: Guid(0d249c49c21b5624c8e652619ab31526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Deco/09.png using Guid(0d249c49c21b5624c8e652619ab31526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844c71c07bf1c9e3babf2ec4a0ac43c3') in 0.017041 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Swords/Deco/17.png
+  artifactKey: Guid(11bb99ccd825c4f47a5dcfed520b73c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Deco/17.png using Guid(11bb99ccd825c4f47a5dcfed520b73c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f4ffeb5335f43f744a69567709b8914') in 0.015021 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny Swords/Deco/07.png
+  artifactKey: Guid(1bd500512737a574a95dfae800f8fac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Deco/07.png using Guid(1bd500512737a574a95dfae800f8fac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc64988e743331925f3367ccbcd575c') in 0.010584 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Tiny Swords/Deco/14.png
+  artifactKey: Guid(ee9d54b07c6f28b42a1da5498a27f9c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Deco/14.png using Guid(ee9d54b07c6f28b42a1da5498a27f9c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e2e1c33c11eba73932c16970799ebf') in 0.010564 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Tiny Swords/Deco/06.png
+  artifactKey: Guid(8c1ad3c43ed75be4fa70ff4578bee06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Deco/06.png using Guid(8c1ad3c43ed75be4fa70ff4578bee06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '499a637b327e23a39704ca6736d72a86') in 0.018189 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tiny Swords/Deco/12.png
+  artifactKey: Guid(259cc8fdfb4a98448b2f05121487823a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Deco/12.png using Guid(259cc8fdfb4a98448b2f05121487823a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4bc52922b2cd1879b9414be43c24bcc') in 0.017957 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 12.917770 seconds.
+  path: Assets/Tiny Swords/Resources/Trees/Tree.png
+  artifactKey: Guid(1167689badc3d2d4bb44cc49de0d0724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Resources/Trees/Tree.png using Guid(1167689badc3d2d4bb44cc49de0d0724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14acad3e5bb4ceaa1cab14f220f3189e') in 0.027114 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 31.219116 seconds.
+  path: Assets/Tiny Swords/Resources/Resources/G_Idle_(NoShadow).png
+  artifactKey: Guid(f4d18fb0d4729d948974455c8579be12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Resources/Resources/G_Idle_(NoShadow).png using Guid(f4d18fb0d4729d948974455c8579be12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08eaabb81de5b54e1ca2ebe5b966ef6c') in 0.015951 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Tiny Swords/Resources/Resources/W_Spawn.png
+  artifactKey: Guid(5732b0ec8880448479ace31ee5879456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Resources/Resources/W_Spawn.png using Guid(5732b0ec8880448479ace31ee5879456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4e547ba5820ff20d0693c2eb36b855') in 0.024821 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tiny Swords/Resources/Resources/M_Idle_(NoShadow).png
+  artifactKey: Guid(7816f7df461d7434591f95661b22beac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Resources/Resources/M_Idle_(NoShadow).png using Guid(7816f7df461d7434591f95661b22beac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23704ebc93011e6e9e7f8ef781e580bb') in 0.032636 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tiny Swords/Resources/Resources/M_Idle.png
+  artifactKey: Guid(9a1f4a6f2f61b8d47ba6dbf68ca8a843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Resources/Resources/M_Idle.png using Guid(9a1f4a6f2f61b8d47ba6dbf68ca8a843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabebd6f9198bc8566750584dc284ca7') in 0.021556 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.921440 seconds.
+  path: Assets/Tiny Swords/Resources/Gold Mine/GoldMine_Destroyed.png
+  artifactKey: Guid(70cc9cdcdd9e1334d893ac3171eb3154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Resources/Gold Mine/GoldMine_Destroyed.png using Guid(70cc9cdcdd9e1334d893ac3171eb3154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '623a9f859de13ef88081e571854ec978') in 0.014352 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.182565 seconds.
+  path: Assets/Tiny Swords/Resources/Sheep/HappySheep_All.png
+  artifactKey: Guid(d5dc6bc909a555c43a65c92f9d0d3a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Resources/Sheep/HappySheep_All.png using Guid(d5dc6bc909a555c43a65c92f9d0d3a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5e9297ac2c6824a757982230d4ec18') in 0.019276 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.491521 seconds.
+  path: Assets/Tiny Swords/Factions/Knights/Troops/Pawn/Blue/Pawn_Blue.png
+  artifactKey: Guid(deee0eeaddf72b44ca20bf67c60eb450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tiny Swords/Factions/Knights/Troops/Pawn/Blue/Pawn_Blue.png using Guid(deee0eeaddf72b44ca20bf67c60eb450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aabc48415266d53211ad5bc9621c6d5') in 0.052587 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 223.386637 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_1.asset
+  artifactKey: Guid(889fb371a4e7d854683ea1fcb4772406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_1.asset using Guid(889fb371a4e7d854683ea1fcb4772406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd8cc9ac630229870f6bb00dd099871') in 0.017297 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_25.asset
+  artifactKey: Guid(4da476e6cd72b9749be0d3aab3d4b32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_25.asset using Guid(4da476e6cd72b9749be0d3aab3d4b32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea45564ead78af96c22590153690945e') in 0.009704 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_9.asset
+  artifactKey: Guid(be09b877fc355034c9bb4689bc9b33ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_9.asset using Guid(be09b877fc355034c9bb4689bc9b33ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0a1c9f8061fc0b953bc9913708a41a') in 0.009103 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_28.asset
+  artifactKey: Guid(28c3d38d06b9021419f9a0ccee783796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_28.asset using Guid(28c3d38d06b9021419f9a0ccee783796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b454ab76d27e49b0d0eb55d6b2f8dd11') in 0.010136 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_29.asset
+  artifactKey: Guid(438471c100142244f886e208e588ff51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_29.asset using Guid(438471c100142244f886e208e588ff51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca7e3c080b2c045c870aabc84fc291a1') in 0.011105 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_18.asset
+  artifactKey: Guid(22a3472113684d440b99f23fb231315e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_18.asset using Guid(22a3472113684d440b99f23fb231315e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba48d76ef8ad91860f457fac84149bd4') in 0.008515 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_31.asset
+  artifactKey: Guid(f55d4c5c5f86d204b836c61f36ed313f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_31.asset using Guid(f55d4c5c5f86d204b836c61f36ed313f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '602f1d07b25d2438c5535b656a5b618c') in 0.008170 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_13.asset
+  artifactKey: Guid(6fe3dd22998b4b84a911275d456b328b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_13.asset using Guid(6fe3dd22998b4b84a911275d456b328b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b9b0dc876602dfb115a16ba856e633') in 0.008863 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_15.asset
+  artifactKey: Guid(1d45f7f0cfc23b34da58af8717c199c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_15.asset using Guid(1d45f7f0cfc23b34da58af8717c199c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cea569ffc2a69f23af534e12a379d6b') in 0.008183 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_22.asset
+  artifactKey: Guid(98cfb3f96222d9b43b6a82f80f8c676f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_22.asset using Guid(98cfb3f96222d9b43b6a82f80f8c676f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f5b5ec2a9518a930809e932bc49d1d') in 0.008158 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_21.asset
+  artifactKey: Guid(472a9757294f9ce4abb72bcc0c5533c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_21.asset using Guid(472a9757294f9ce4abb72bcc0c5533c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d218e6c90256e7d9574768e0462b012') in 0.007794 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_30.asset
+  artifactKey: Guid(6b264070ab0cf204da16ba3dd7af6d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_30.asset using Guid(6b264070ab0cf204da16ba3dd7af6d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05483dfb406584cb5bb19ddca36718a0') in 0.008726 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_6.asset
+  artifactKey: Guid(ea0efba96271f214aa765a27d141df84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_6.asset using Guid(ea0efba96271f214aa765a27d141df84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93b548c9b766cb8870374806b699f5d7') in 0.011117 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_17.asset
+  artifactKey: Guid(faabe964b337a5347b6c4eaa9f1b384f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_17.asset using Guid(faabe964b337a5347b6c4eaa9f1b384f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ebc71658ddbba7b22618a71ccdee88') in 0.007211 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_27.asset
+  artifactKey: Guid(e205a81ed818a72478d8900705c1608c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_27.asset using Guid(e205a81ed818a72478d8900705c1608c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e216d17fb8e2a4b0df61775a18568711') in 0.008226 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_8.asset
+  artifactKey: Guid(dc33bdc4769055a448d289550385803b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_8.asset using Guid(dc33bdc4769055a448d289550385803b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de6f5cbad859509c659821acd5a22bcb') in 0.007867 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_14.asset
+  artifactKey: Guid(f1d0c6bd666b6b94d860c9056275466c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Tilesets/TinyKnights_Tilemap_Floor/Tilemap_Flat_14.asset using Guid(f1d0c6bd666b6b94d860c9056275466c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbdcffc34b3adfc91794814d1ac3de4d') in 0.009607 seconds 
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
