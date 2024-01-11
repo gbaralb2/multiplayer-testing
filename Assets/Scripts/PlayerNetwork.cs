@@ -9,7 +9,7 @@ using Cinemachine;
 
 public class PlayerNetwork : NetworkBehaviour
 {
-    [SerializeField] private Animator animator;
+    // [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private CinemachineVirtualCamera vc;
     [SerializeField] private AudioListener listener;
@@ -51,20 +51,20 @@ public class PlayerNetwork : NetworkBehaviour
 
 
         //PLAYER CONTROLLER
-        if (!IsOwner) return;
+        // if (!IsOwner) return;
 
 
-        Vector3 moveDir = new Vector3(0, 0, 0);
+        // Vector3 moveDir = new Vector3(0, 0, 0);
 
-        if (Input.GetKey(KeyCode.W)) moveDir.y = 1f;
-        if (Input.GetKey(KeyCode.S)) moveDir.y = -1f;
-        if (Input.GetKey(KeyCode.A)) moveDir.x = -1f;
-        if (Input.GetKey(KeyCode.D)) moveDir.x = 1f;
+        // if (Input.GetKey(KeyCode.W)) moveDir.y = 1f;
+        // if (Input.GetKey(KeyCode.S)) moveDir.y = -1f;
+        // if (Input.GetKey(KeyCode.A)) moveDir.x = -1f;
+        // if (Input.GetKey(KeyCode.D)) moveDir.x = 1f;
 
-        animator.SetFloat("Speed", Math.Abs(moveDir.x) + Math.Abs(moveDir.y));
+        // animator.SetFloat("Speed", Math.Abs(moveDir.x) + Math.Abs(moveDir.y));
 
-        float moveSpeed = 3f;
-        transform.position += moveDir.normalized * moveSpeed * Time.deltaTime;
+        // float moveSpeed = 3f;
+        // transform.position += moveDir.normalized * moveSpeed * Time.deltaTime;
 
 
     }
