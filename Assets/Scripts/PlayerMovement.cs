@@ -14,7 +14,6 @@ public class PlayerMovement : NetworkBehaviour
     {
         if (!IsOwner) return;
 
-
         moveDir = new Vector3(0, 0, 0);
 
         if (Input.GetKey(KeyCode.W)) moveDir.y = 1f;

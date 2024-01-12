@@ -41,6 +41,6 @@ public class Interactor : NetworkBehaviour
         // DISABLE INTERACT UI
         if (other.GetComponent<Interactable>()) other.transform.GetChild(0).gameObject.SetActive(false);
         
-        interactable = null;
+        if (other.GetComponent<Interactable>()) interactable = null;
     }
 }

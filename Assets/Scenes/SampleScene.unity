@@ -1618,7 +1618,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.910891, y: 2.7548232}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &1209530766
 MonoBehaviour:
@@ -4819,8 +4819,8 @@ MonoBehaviour:
   - You sure? Like really, really sure?
   - $GOTO7@1. Yes, bro!
   - $GOTO8@2. Nah, bro...
-  - $END $EVENT@Sick! Here you go!
-  - $END@Aw man! See ya!
+  - $END $EVENT:SWITCH_ARCHER @Sick! Here you go!
+  - $END @Aw man! See ya!
 --- !u!61 &1941158606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4845,7 +4845,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.774779, y: 2.5941155}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
 --- !u!1 &2001732746
 GameObject:

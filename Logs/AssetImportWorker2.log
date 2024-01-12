@@ -9,11 +9,11 @@ D:\Unity\2021.3.33f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker1
+AssetImportWorker2
 -projectPath
 C:/Users/gbara/repos/Shmestiny
 -logFile
-Logs/AssetImportWorker1.log
+Logs/AssetImportWorker2.log
 -srvPort
 54006
 Successfully changed project path to: C:/Users/gbara/repos/Shmestiny
@@ -47,12 +47,12 @@ C:/Users/gbara/repos/Shmestiny
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [48584] Host "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 1965873285 [EditorId] 1965873285 [Version] 1048832 [Id] WindowsEditor(7,g-frame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [46452] Host "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 715177227 [EditorId] 715177227 [Version] 1048832 [Id] WindowsEditor(7,g-frame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [48584] Host "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 1965873285 [EditorId] 1965873285 [Version] 1048832 [Id] WindowsEditor(7,g-frame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [46452] Host "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 715177227 [EditorId] 715177227 [Version] 1048832 [Id] WindowsEditor(7,g-frame) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 95.35 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 83.14 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
 [Subsystems] Discovering subsystems at path D:/Unity/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -68,91 +68,91 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2021.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001312 seconds.
+Registered in 0.001391 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 130.41 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 82.05 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.562 seconds
+- Completed reload, in  0.405 seconds
 Domain Reload Profiling:
-	ReloadAssembly (563ms)
-		BeginReloadAssembly (64ms)
+	ReloadAssembly (406ms)
+		BeginReloadAssembly (68ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (444ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (288ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (66ms)
+			SetupTypeCache (59ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (17ms)
-			SetupLoadedEditorAssemblies (335ms)
+			RebuildScriptCaches (15ms)
+			SetupLoadedEditorAssemblies (192ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (130ms)
-				BeforeProcessingInitializeOnLoad (3ms)
-				ProcessInitializeOnLoadAttributes (150ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
+				RefreshPlugins (82ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (81ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013360 seconds.
+Registered in 0.007385 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 81.67 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 77.41 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.270 seconds
+- Completed reload, in  1.136 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1271ms)
-		BeginReloadAssembly (106ms)
+	ReloadAssembly (1136ms)
+		BeginReloadAssembly (81ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (1096ms)
-			LoadAssemblies (95ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (997ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (181ms)
+			SetupTypeCache (152ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (779ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (719ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (555ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				RefreshPlugins (77ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (523ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5724 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 60 unused Assets / (119.3 KB). Loaded Objects now: 6178.
 Memory consumption went from 206.2 MB to 206.0 MB.
-Total: 3.280300 ms (FindLiveObjects: 0.523600 ms CreateObjectMapping: 0.136400 ms MarkObjects: 2.536100 ms  DeleteObjects: 0.083400 ms)
+Total: 2.702500 ms (FindLiveObjects: 0.296600 ms CreateObjectMapping: 0.146900 ms MarkObjects: 2.190900 ms  DeleteObjects: 0.067500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,27 +167,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1326271.119398 seconds.
-  path: Assets/Tiny Swords/Factions/Knights/Troops/Pawn/Purple/Pawn_Purple.aseprite
-  artifactKey: Guid(1675b68aea668164582c0d24ccc804b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Factions/Knights/Troops/Pawn/Purple/Pawn_Purple.aseprite using Guid(1675b68aea668164582c0d24ccc804b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c9f51d91797a17cc4f36331882e1b93') in 0.348102 seconds 
-Number of asset objects unloaded after import = 62
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiny Swords/Factions/Goblins/Troops/TNT/Blue/TNT_Blue.aseprite
-  artifactKey: Guid(71a2872f052961541b64038178503845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Factions/Goblins/Troops/TNT/Blue/TNT_Blue.aseprite using Guid(71a2872f052961541b64038178503845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f6ec261e98073751453f49ef77e4a4') in 0.056252 seconds 
-Number of asset objects unloaded after import = 45
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiny Swords/Terrain/Water/Rocks/Rocks.aseprite
-  artifactKey: Guid(a1f4db927142d0d4caf3b322a91d85ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Tiny Swords/Terrain/Water/Rocks/Rocks.aseprite using Guid(a1f4db927142d0d4caf3b322a91d85ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12dd30eb6941d281215350a57ce44d51') in 0.131405 seconds 
-Number of asset objects unloaded after import = 49

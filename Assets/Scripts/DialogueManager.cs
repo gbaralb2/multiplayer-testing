@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.Netcode;
+// using Unity.Netcode;
 using TMPro;
 using System.CodeDom.Compiler;
 using UnityEngine.UI;
@@ -9,26 +9,32 @@ using Unity.VisualScripting;
 using System.Xml.Serialization;
 using System;
 
-public class DialogueManager : NetworkBehaviour
+public class DialogueManager : MonoBehaviour
 {
+    [SerializeField] private EventManager eventManager;
     private float transitionTime = 0.5f;
     private SpriteRenderer portrait;
     private new string name;
     private string[] lines;
-    private List<int> endIndices, choiceIndices, choices;
+    private List<int> endIndices, eventIndices, choiceIndices, choices;
     [SerializeField] private TextMeshProUGUI character, text;
     [SerializeField] private Image image;
-    private bool inProgress, stopTyping, isTyping, makingChoice, onEnd;
+    private bool inProgress, stopTyping, isTyping, makingChoice, onEnd, onEvent;
     private int currentLine;
     private float typeSpeed = 0.03f;
 
     private void Update()
     {
-        if (!IsOwner) return;
+        // if (!IsOwner) return;
 
         if (onEnd)
         {
             if (inProgress && !isTyping && Input.GetKeyDown(KeyCode.E)) StartCoroutine(EndDialogue());
+        }
+
+        if (onEvent)
+        {
+            if (!isTyping && Input.GetKeyDown(KeyCode.E)) {SendEvent(currentLine); onEvent = false;}
         }
 
         if (!makingChoice)
@@ -51,9 +57,11 @@ public class DialogueManager : NetworkBehaviour
         // ENABLE DIALOGUE SCREEN
         transform.GetChild(0).gameObject.SetActive(true);
 
+        currentLine = 0;
+
         onEnd = false;
 
-        currentLine = 0;
+        onEvent = false;
 
         makingChoice = false;
         
@@ -64,6 +72,7 @@ public class DialogueManager : NetworkBehaviour
         transform.parent.GetComponent<Interactor>().enabled = false;
 
         endIndices = EndCheck();
+        eventIndices = EventCheck();
         choiceIndices = ChoiceCheck();
 
         StartCoroutine(PaintPortrait());
@@ -94,6 +103,9 @@ public class DialogueManager : NetworkBehaviour
 
         // IS THIS AN END LINE?
         if (endIndices.Contains(currentLine)) onEnd = true;
+
+        // IS THIS AN EVENT LINE?
+        if (eventIndices.Contains(currentLine)) onEvent = true;
 
         // END DUE TO LENGTH
         if (currentLine < lines.Length) StartCoroutine(TypeLine(currentLine));
@@ -180,6 +192,21 @@ public class DialogueManager : NetworkBehaviour
         return endIndices;
     }
 
+    private List<int> EventCheck()
+    {
+        List<int> eventIndices = new List<int>();
+        for (int i = 0; i < lines.Length; i++) if (lines[i].Contains("$EVENT")) eventIndices.Add(i);
+        return eventIndices;
+    }
+
+    private void SendEvent(int index)
+    {
+        int startIndex = lines[index].IndexOf("$EVENT:") + 7;
+        int endIndex = lines[index].IndexOf(' ', startIndex);
+        string eventName = lines[index].Substring(startIndex, endIndex - startIndex);
+        eventManager.StartEvent(eventName);
+    }
+
     private List<int> ChoiceCheck()
     {
         List<int> choiceIndices = new List<int>();
@@ -220,14 +247,14 @@ public class DialogueManager : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!IsOwner) return;
+        // if (!IsOwner) return;
 
         if (other.GetComponent<Dialogue>()) other.GetComponent<Dialogue>().LinkManager(this);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (!IsOwner) return;
+        // if (!IsOwner) return;
 
         // PORTRAIT
         image.color = new Color(image.color.r, image.color.g, image.color.b, 0f);
