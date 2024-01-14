@@ -8,8 +8,9 @@ using UnityEngine.UI;
 using Unity.VisualScripting;
 using System.Xml.Serialization;
 using System;
+using Unity.Netcode;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : NetworkBehaviour
 {
     [SerializeField] private EventManager eventManager;
     private float transitionTime = 0.5f;
@@ -25,7 +26,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        // if (!IsOwner) return;
+        if (!IsOwner) return;
 
         if (onEnd)
         {
@@ -247,14 +248,14 @@ public class DialogueManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // if (!IsOwner) return;
+        if (!IsOwner) return;
 
         if (other.GetComponent<Dialogue>()) other.GetComponent<Dialogue>().LinkManager(this);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        // if (!IsOwner) return;
+        if (!IsOwner) return;
 
         // PORTRAIT
         image.color = new Color(image.color.r, image.color.g, image.color.b, 0f);
