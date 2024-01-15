@@ -18,7 +18,7 @@ public class EventManager : NetworkBehaviour
         gameObject.GetComponent<Player>().SetClass("pawn");
     }
 
-    [ServerRpc]
+    [ServerRpc(RequireOwnership = false)]
     private void SwitchPawnServerRpc()
     {
         gameObject.GetComponent<Archer>().enabled = false;
@@ -39,7 +39,7 @@ public class EventManager : NetworkBehaviour
         gameObject.GetComponent<Player>().SetClass("archer");
     }
 
-    [ServerRpc]
+    [ServerRpc(RequireOwnership = false)]
     private void SwitchArcherServerRpc()
     {
         gameObject.GetComponent<Pawn>().enabled = false;

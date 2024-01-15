@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using System.Linq;
+using TMPro;
 
 public class CharacterPersistenceManager : MonoBehaviour
 {
@@ -65,6 +66,8 @@ public class CharacterPersistenceManager : MonoBehaviour
         foreach (ICharacterPersistence characterPersistenceObj in characterPersistenceObjects)
         {
             characterPersistenceObj.SaveCharacter(ref characterData);
+
+            Debug.Log("found one");
         }
 
         Debug.Log("Saved class: " + characterData.charClass);
@@ -73,10 +76,10 @@ public class CharacterPersistenceManager : MonoBehaviour
         dataHandler.Save(characterData);
     }
 
-    private void OnApplicationQuit()
-    {
-        SaveCharacter();
-    }
+    // private void OnApplicationQuit()
+    // {
+    //     SaveCharacter();
+    // }
 
     private List<ICharacterPersistence> FindAllCharacterPersistenceObjects()
     {
