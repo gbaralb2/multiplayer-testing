@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
+using System;
 
 public class EventManager : NetworkBehaviour
 {
@@ -15,7 +16,8 @@ public class EventManager : NetworkBehaviour
     {
         gameObject.GetComponent<Archer>().enabled = false;
         gameObject.GetComponent<Pawn>().enabled = true;
-        gameObject.GetComponent<Player>().SetClass("pawn");
+        gameObject.GetComponent<Character>().SetClass("pawn");
+        gameObject.GetComponent<Character>().data.charClass = "pawn";
     }
 
     [ServerRpc(RequireOwnership = false)]
@@ -36,7 +38,8 @@ public class EventManager : NetworkBehaviour
     {
         gameObject.GetComponent<Pawn>().enabled = false;
         gameObject.GetComponent<Archer>().enabled = true;
-        gameObject.GetComponent<Player>().SetClass("archer");
+        gameObject.GetComponent<Character>().SetClass("archer");
+        gameObject.GetComponent<Character>().data.charClass = "archer";
     }
 
     [ServerRpc(RequireOwnership = false)]

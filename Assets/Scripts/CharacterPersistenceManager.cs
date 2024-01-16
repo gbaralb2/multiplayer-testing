@@ -66,8 +66,6 @@ public class CharacterPersistenceManager : MonoBehaviour
         foreach (ICharacterPersistence characterPersistenceObj in characterPersistenceObjects)
         {
             characterPersistenceObj.SaveCharacter(ref characterData);
-
-            Debug.Log("found one");
         }
 
         Debug.Log("Saved class: " + characterData.charClass);
@@ -75,11 +73,6 @@ public class CharacterPersistenceManager : MonoBehaviour
         // TODO - save that data to a file using the data handler
         dataHandler.Save(characterData);
     }
-
-    // private void OnApplicationQuit()
-    // {
-    //     SaveCharacter();
-    // }
 
     private List<ICharacterPersistence> FindAllCharacterPersistenceObjects()
     {
