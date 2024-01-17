@@ -25,18 +25,14 @@ public class CharacterDatabase : NetworkBehaviour
         database = new Dictionary<ulong, Character.NetworkCharacterData>();
     }
 
+    private void Start()
+    {
+        NetworkManager.Singleton.OnClientConnectedCallback += OnClientConnect;
+    }
+
     private void Update()
     {
-        // this is fucked but so is OnClientDisconnect or whatever the fuck
-        if (IsHost) {
-            SyncDatabase();
-            Debug.Log("database count: " + database.Count);
-            List<ulong> idList = new List<ulong>(database.Keys);
-            foreach (ulong id in idList)
-            {
-                Debug.Log(id.ToString());
-            }
-        }
+        Debug.Log(database.Count);
     }
 
     public void UploadData(ulong clientId, Character.NetworkCharacterData data)
@@ -65,11 +61,26 @@ public class CharacterDatabase : NetworkBehaviour
                 if (!NetworkManager.ConnectedClientsIds.Contains(id)) RemoveDataServerRpc(id);
             }
         }
+        // foreach (ulong id in idList)
+        // {
+        //     if (!NetworkManager.ConnectedClientsIds.Contains(id)) RemoveDataServerRpc(id);
+        // }
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void SyncDatabaseServerRpc()
+    {
+        SyncDatabase();
     }
 
     [ServerRpc]
     private void RemoveDataServerRpc(ulong clientId)
     {
         database.Remove(clientId);
+    }
+
+    private void OnClientConnect(ulong clientId)
+    {
+        SyncDatabaseServerRpc();
     }
 }

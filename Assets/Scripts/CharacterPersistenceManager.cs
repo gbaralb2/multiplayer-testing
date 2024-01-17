@@ -56,8 +56,6 @@ public class CharacterPersistenceManager : MonoBehaviour
         {
             characterPersistenceObj.LoadCharacter(characterData);
         }
-
-        Debug.Log("Loaded class: " + characterData.charClass);
     }
 
     public void SaveCharacter()

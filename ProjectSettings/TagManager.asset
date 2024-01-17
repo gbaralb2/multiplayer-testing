@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TestRelay
   - NetworkManagerUI
+  - HUD
   layers:
   - Default
   - TransparentFX

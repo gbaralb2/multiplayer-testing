@@ -4,6 +4,7 @@ using UnityEngine;
 using Unity.Netcode;
 using Unity.Collections;
 using System;
+using Unity.Networking.Transport;
 
 public class Character : NetworkBehaviour, ICharacterPersistence
 {
@@ -38,7 +39,6 @@ public class Character : NetworkBehaviour, ICharacterPersistence
         if (!IsOwner) return;
 
         dataHandler = new FileDataHandler(Application.persistentDataPath, "char.save", false);
-        Debug.Log(dataHandler);
 
         // Loading local character data on startup
         CharacterPersistenceManager.instance.LoadCharacter();
@@ -52,6 +52,14 @@ public class Character : NetworkBehaviour, ICharacterPersistence
         if (!IsHost)
         {
             RequestDataServerRpc();
+        }
+
+        // getting data for local player manager
+        foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
+        {
+            // if key aleady exists
+            if (PlayerManager.instance.players.ContainsKey(player.GetComponent<Character>().clientId)) continue;
+            PlayerManager.instance.AddPlayer(player.GetComponent<Character>().clientId, player);
         }
     }
 
@@ -68,8 +76,6 @@ public class Character : NetworkBehaviour, ICharacterPersistence
         {
             eventManager.StartEvent("SWITCH_ARCHER");
         }
-
-        Debug.Log("Current Class: " + currentClass + ". Class in data: " + data.charClass);
     }
 
     public void SetClass(string charClass)
