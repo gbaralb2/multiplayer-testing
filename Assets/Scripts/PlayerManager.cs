@@ -34,7 +34,7 @@ public class PlayerManager : NetworkBehaviour
 
     private void OnClientConnect(ulong clientId)
     {
-        AddPlayerClientRpc(clientId);
+        // AddPlayerClientRpc(clientId);
     }
 
     public void AddPlayer(ulong clientId, GameObject player)
@@ -44,18 +44,23 @@ public class PlayerManager : NetworkBehaviour
         players.Add(clientId, player);
     }
 
-    [ClientRpc]
-    public void AddPlayerClientRpc(ulong clientId)
+    // [ClientRpc]
+    // public void AddPlayerClientRpc(ulong clientId)
+    // {
+    //     foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
+    //     {
+    //         if (player.GetComponent<Character>().clientId == clientId)
+    //         {
+    //             AddPlayer(clientId, player);
+    //         }
+    //     }
+    // }
+
+    [ServerRpc]
+    private void AddPlayerServerRpc()
     {
 
-        foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
-        {
-            Debug.Log("ran");
-            if (player.GetComponent<Character>().clientId == clientId)
-            {
-                AddPlayer(clientId, player);
-            }
-        }
     }
+
     // the big idea of this is to be able to access a local player based on their clientid
 }

@@ -5,6 +5,7 @@ using Unity.Netcode;
 using Unity.Collections;
 using System;
 using Unity.Networking.Transport;
+using UnityEditor;
 
 public class Character : NetworkBehaviour, ICharacterPersistence
 {
@@ -110,9 +111,17 @@ public class Character : NetworkBehaviour, ICharacterPersistence
 
 
     [ServerRpc]
-    private void UploadDataServerRpc(ulong clientId, NetworkCharacterData data)
+    private void UploadDataServerRpc(ulong clientId, NetworkCharacterData data, ServerRpcParams serverRpcParams = default)
     {
         CharacterDatabase.instance.UploadData(clientId, data);
+        PlayerManager.instance.AddPlayer(serverRpcParams.Receive.SenderClientId, gameObject);
+        AddPlayerClientRpc(serverRpcParams.Receive.SenderClientId);
+    }
+
+    [ClientRpc]
+    private void AddPlayerClientRpc(ulong clientId)
+    {
+        PlayerManager.instance.AddPlayer(clientId, gameObject);
     }
 
     [ServerRpc]
